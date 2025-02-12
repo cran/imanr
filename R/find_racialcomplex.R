@@ -3,7 +3,7 @@
 #' @param data A dataset that contains qualitative and quantitative characteristics
 #' of a corn ear or series of ears. The selected characteristics are related
 #'  to colors, some measurements and the locations in which the corn was grown.
-#'  A template for what has to be filled will be included on the GitHub page of
+#'  A template for what has to be filled is included in the GitHub repo of
 #'  the project.
 #'
 #' @return \code{findraciacomplex()}
@@ -19,17 +19,28 @@
 #' @aliases findracialcomplex
 #' @export
 #' @importFrom stats predict
-#' @import caret
-#' @import ranger
+#' @importFrom bundle unbundle
+#' @import tidymodels
+#' @import xgboost
 #'
 #' @examples
-#' df <- find_racial_complex(data31)
-#' df
+#' \dontrun{
+#' find_racial_complex(data24)#'
+#' }
+#'
 
 find_racial_complex <- function(data){
 
-  # Run data through the Random Forest model
-  prediction <- predict(Model_RF_8083, data)
+  # Ensure the model is available
+  if(is.null(imanr_env$BE_model_unbundled)){
+    stop("The Boosted Ensemble model is not loaded.")
+  }
+
+  # Ensure input is a base data frame
+  data <- as.data.frame(data)
+
+  # Run data through the Boosted Ensemble model
+  prediction <- predict(imanr_env$BE_model_unbundled, data)
 
   return(prediction)
 }

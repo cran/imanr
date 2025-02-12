@@ -11,7 +11,7 @@ find_racial_complex(data)
 \item{data}{A dataset that contains qualitative and quantitative characteristics
 of a corn ear or series of ears. The selected characteristics are related
  to colors, some measurements and the locations in which the corn was grown.
- A template for what has to be filled will be included on the GitHub page of
+ A template for what has to be filled is included in the GitHub repo of
  the project.}
 }
 \value{
@@ -22,8 +22,10 @@ returns a racial complex classification for the dataset or single observation th
 Identify the Racial Complex of native corn from Mexico
 }
 \examples{
-df <- find_racial_complex(data31)
-df
+\dontrun{
+find_racial_complex(data24)#'
+}
+
 }
 \references{
 James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013).

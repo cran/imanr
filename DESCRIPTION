@@ -1,7 +1,7 @@
 Package: imanr
 Type: Package
 Title: Identify the Racial Complex of Native Corns from Mexico
-Version: 1.0.2
+Version: 2.0.0
 Authors@R: c(person("Rafael","Nieves-Alvarez",
                   email="nievesalvarez1618@gmail.com",
                   role=c("aut","cre"),
@@ -34,14 +34,14 @@ Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz
 RoxygenNote: 7.3.1
-Imports: missForest, caret, ranger, dplyr, parallel, doParallel,
-        foreach
+Imports: missForest, dplyr, parallel, doParallel, foreach, bundle,
+        tidymodels, xgboost
 Suggests: testthat (>= 3.0.0), knitr, rmarkdown
 Config/testthat/edition: 3
 VignetteBuilder: knitr
-Depends: R (>= 3.5.0)
+Depends: R (>= 4.1.0)
 NeedsCompilation: no
-Packaged: 2024-06-16 16:28:06 UTC; rafa
+Packaged: 2025-02-12 14:10:25 UTC; rafa
 Author: Rafael Nieves-Alvarez [aut, cre]
     (<https://orcid.org/0009-0002-8016-1412>),
   Arturo Sanchez-Porras [aut, cph]
@@ -50,4 +50,4 @@ Author: Rafael Nieves-Alvarez [aut, cre]
   Otilio Arturo Acevedo-Sandoval [aut]
     (<https://orcid.org/0000-0003-0475-7003>)
 Repository: CRAN
-Date/Publication: 2024-06-23 14:30:02 UTC
+Date/Publication: 2025-02-12 14:40:02 UTC

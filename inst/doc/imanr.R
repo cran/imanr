@@ -14,19 +14,19 @@ data("data31")
 # Necessary fields
 names(data31)
 
-## ----using_find_racial_complex------------------------------------------------
-# test for racial complexes
-find_racial_complex(data31)
-
-#> [1] Tropicales tardíos  Dentados tropicales Dentados tropicales Dentados tropicales
-#> [5] Dentados tropicales Dentados tropicales Dentados tropicales Dentados tropicales
-#> [9] Dentados tropicales Dentados tropicales Dentados tropicales Dentados tropicales
-#> [13] Dentados tropicales Dentados tropicales Dentados tropicales Dentados tropicales
-#> [17] Dentados tropicales Dentados tropicales Tropicales tardíos  Dentados tropicales
-#> [21] Dentados tropicales Dentados tropicales Dentados tropicales Dentados tropicales
-#> [25] Dentados tropicales Dentados tropicales Dentados tropicales Dentados tropicales
-#> [29] Dentados tropicales Dentados tropicales Dentados tropicales
-#> 7 Levels: Chapalote Cónico Dentados tropicales Ocho hileras ... Tropicales tardíos
+## ----using_find_racial_complex, eval=FALSE------------------------------------
+#  # test for racial complexes
+#  find_racial_complex(data31)
+#  
+#  #> [1] Tropicales tardíos  Dentados tropicales Dentados tropicales Dentados tropicales
+#  #> [5] Dentados tropicales Dentados tropicales Dentados tropicales Dentados tropicales
+#  #> [9] Dentados tropicales Dentados tropicales Dentados tropicales Dentados tropicales
+#  #> [13] Dentados tropicales Dentados tropicales Dentados tropicales Dentados tropicales
+#  #> [17] Dentados tropicales Dentados tropicales Tropicales tardíos  Dentados tropicales
+#  #> [21] Dentados tropicales Dentados tropicales Dentados tropicales Dentados tropicales
+#  #> [25] Dentados tropicales Dentados tropicales Dentados tropicales Dentados tropicales
+#  #> [29] Dentados tropicales Dentados tropicales Dentados tropicales
+#  #> 7 Levels: Chapalote Cónico Dentados tropicales Ocho hileras ... Tropicales tardíos
 
 ## ----using_impute_data, eval=FALSE--------------------------------------------
 #  # testing the function
@@ -42,7 +42,7 @@ find_racial_complex(data31)
 #  install_github(repo = "rafa6174/imanr", build_vignettes = TRUE)
 #  
 #  #> From CRAN (recommended)
-#  # install.packages("imanr") # not just yet...
+#  install.packages("imanr")
 #  
 
 ## ----loading_the_package, eval = FALSE----------------------------------------
